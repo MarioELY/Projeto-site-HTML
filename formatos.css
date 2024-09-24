@@ -1,0 +1,167 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d28c7d;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 10px;
+    background-color: #d28c7d;
+}
+
+nav p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.menu-button {
+    background-color: #fff; /* Fundo branco para o botão */
+    color: #d28c7d; /* Cor do texto correspondente ao fundo */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Mão ao passar o mouse */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.menu-button:hover {
+    background-color: #d28c7d; /* Muda a cor de fundo ao passar o mouse */
+    color: #fff; /* Muda a cor do texto ao passar o mouse */
+}
+
+.logotipo {
+    width: 8%;
+    height: -50px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    margin-top: -30px; /* Ajusta a logo e o título para cima */
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 0 0 0; /* Adiciona margem ao topo do parágrafo */
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.navbar-nav {
+    display: flex; /* Alinha os itens em linha */
+    list-style: none; /* Remove os marcadores */
+}
+
+.nav-item {
+    margin: 0 10px; /* Espaçamento entre os itens do menu */
+}
+
+.menu-button {
+    background-color: #fff; /* Fundo branco para o botão */
+    color: #d28c7d; /* Cor do texto correspondente ao fundo */
+    border: 2px solid #d28c7d; /* Borda do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Mão ao passar o mouse */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.menu-button:hover {
+    background-color: #d28c7d; /* Muda a cor de fundo ao passar o mouse */
+    color: #fff; /* Muda a cor do texto ao passar o mouse */
+}
+
+#receitas {
+    max-height: 70vh; /* Limite de altura para permitir rolagem */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.receitas-container {
+    display: flex; /* Usando flexbox para organizar receitas */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: space-around; /* Espaçamento entre os itens */
+}
+
+.receita {
+    background-color: #fff; /* Fundo branco para cada receita */
+    border: 1px solid #d28c7d; /* Borda da receita */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 10px; /* Espaçamento entre as receitas */
+    padding: 15px; /* Espaçamento interno da receita */
+    width: 300px; /* Largura fixa para os painéis */
+    transition: transform 0.3s; /* Transição suave para efeito hover */
+}
+
+.receita:hover {
+    transform: translateY(-5px); /* Levanta a receita ao passar o mouse */
+}
+
+.receita h2 {
+    font-size: 20px; /* Tamanho do título da receita */
+    margin-bottom: 10px; /* Margem abaixo do título */
+}
+
+.receita img {
+    width: 100%; /* Imagem ocupa toda a largura do painel */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+}
+
+.receita h3 {
+    margin-top: 10px; /* Margem acima dos subtítulos */
+}
+
+.receita ul {
+    padding-left: 20px; /* Espaçamento à esquerda para a lista */
+}
+
+footer {
+    background-color: #000; /* Fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 10px; /* Espaçamento interno do rodapé */
+    position: relative; /* Posição relativa para o rodapé */
+    width: 100%; /* Largura total */
+}
+
+@media (max-width: 768px) {
+    .receita {
+        width: 100%; /* Largura total em telas menores */
+    }
+}
